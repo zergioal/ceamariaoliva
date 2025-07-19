@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrera: Gastronomía</title>
+    <link rel="stylesheet" href="styles/gastronomia.css" />
+    <link rel="stylesheet" href="styles/galeria_hover_ampliada.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="logo-container">
+        <img src="Images/logo3.png" alt="Logo CEA" class="logo" />
+        <div class="title">
+          <h3>CENTRO DE EDUCACIÓN ALTERNATIVA</h3>
+          <h1>"MADRE MARÍA OLIVA"</h1>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#carreras" class="active">Carreras</a>
+      <a href="index.html#requisitos">Requisitos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+
+    <!-- PARALLAX-->
+    <section class="parallax">
+      <div class="parallax-content">
+        <h2>Gastronomía</h2>
+        <p>
+          Técnicas culinarias, inocuidad, seguridad ocupacional y procedimientos
+          de panadería, repostería y pastelería, desarrolladas en proyectos de
+          emprendimiento creativo.
+        </p>
+      </div>
+    </section>
+
+    <!--CURRICULAR -->
+    <section class="niveles-section">
+      <div class="nivel-card">
+        <h3>Técnico Básico</h3>
+        <ul>
+          <li>Gastronomía I</li>
+          <li>Inocuidad y Seguridad Ocupacional</li>
+          <li>Gastronomía II</li>
+          <li>Repostería, Pastelería y Panadería I</li>
+          <li>Repostería, Pastelería y Panadería II</li>
+        </ul>
+      </div>
+
+      <div class="nivel-card">
+        <h3>Técnico Auxiliar</h3>
+        <ul>
+          <li>Nutrición y Dietética</li>
+          <li>Cocina Nacional</li>
+          <li>Panadería Integral</li>
+          <li>Elaboración de Postres</li>
+          <li>Gestión Gastronómica</li>
+        </ul>
+      </div>
+
+      <div class="nivel-card">
+        <h3>Técnico Medio I</h3>
+        <ul>
+          <li>Gastronomía Internacional</li>
+          <li>Presentación de Platos</li>
+          <li>Costos y Presupuestos</li>
+          <li>Servicio y Atención al Cliente</li>
+          <li>Proyecto Inicial Gastronómico</li>
+        </ul>
+      </div>
+
+      <div class="nivel-card">
+        <h3>Técnico Medio II</h3>
+        <ul>
+          <li>Emprendimiento Gastronómico</li>
+          <li>Control de Calidad de Alimentos</li>
+          <li>Planificación de Menús</li>
+          <li>Práctica Profesional</li>
+          <li>Defensa Final</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="galeria" data-aos="zoom-out-up" data-aos-delay="100">
+      <h2>Galería</h2>
+      <div class="galeria-grid">
+        <img
+          src="Images2/Gastro1.jpeg"
+          alt="Foto 1"
+          onmouseenter="mostrarAmpliada(this)"
+        />
+        <img
+          src="Images2/Gastro2.jpeg"
+          alt="Foto 2"
+          onmouseenter="mostrarAmpliada(this)"
+        />
+        <img
+          src="Images2/Gastro3.jpeg"
+          alt="Foto 3"
+          onmouseenter="mostrarAmpliada(this)"
+        />
+      </div>
+    </section>
+    <!-- Imagen ampliada centrada -->
+    <div class="hover-ampliada" id="hoverAmpliada">
+      <img id="imgAmpliada" src="" alt="Ampliada" />
+    </div>
+
+    <footer id="contacto" class="footer">
+      <div class="footer-content">
+        <p>
+          Contacto:
+          <a
+            href="https:/wa.me/59171418791"
+            class="whatsapp-link"
+            target="_blank"
+            >WhatsApp</a
+          >
+          | Teléfono: 4502863
+        </p>
+        <p>Ubicación: Calle Maximiliano Marquez Nº 2036 (Lado UCB)</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.833316632396!2d-66.14519144655722!3d-17.37175187155215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e375fa6d279abb%3A0x2593b31c86be20d1!2sCEA%20MADRE%20MAR%C3%8DA%20OLIVA!5e0!3m2!1ses-419!2sbo!4v1718307280569!5m2!1ses-419!2sbo"
+          width="600"
+          height="90"
+          loading="lazy"
+          style="border: 0"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="scripts/galeria_hover_ampliada.js"></script>
+</html>

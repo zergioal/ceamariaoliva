@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>principal</title>
+    <link rel="preconnect" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/galeria_hover_ampliada.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+     <img class="paralaxed" src="Images/CEA.jpeg" />
+<header class="header">
+    <div class="logo-container">
+      <img src="Images/logo3.png" alt="Logo CEA" class="logo" />
+      <div class="title">
+        <h3>CENTRO DE EDUCACIÓN ALTERNATIVA</h3>
+        <h1>"MADRE MARÍA OLIVA"</h1>
+      </div>
+    </div>
+</header>
+
+<section id="redirigir1">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#institucion">Institución</a></li>
+          <li><a href="#carreras">Carreras</a></li>
+          <li><a href="#requisitos">Requisitos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+ <section id="institucion" class="institucional">
+    <h2>Sobre la Institución</h2>
+      <div class="institucional-cards">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Nosotros</h3>
+          <p>El Centro de Educación Alternativa de convenio lleva el nombre de “Madre María Oliva”, fundadora de la Congregación Religiosa “Hijas de la Iglesia”.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Misión</h3>
+          <p>Formar profesionales técnicos emprendedores con valores humanos, cristianos y solidarios, contribuyendo al desarrollo local y nacional.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Visión</h3>
+          <p>Ser una institución educativa reconocida por su calidad académica, compromiso social y formación integral.</p>
+        </div>
+      </div>
+</section>
+
+    
+<section class="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-grid" data-aos="zoom-out-up" data-aos-delay="100">
+      <img src="Images2/CEA1.jpeg" alt="Foto 1" onmouseenter="mostrarAmpliada(this)" onclick="mostrarAmpliada(this)"/>
+      <img src="Images2/CEA2.jpeg" alt="Foto 2" onmouseenter="mostrarAmpliada(this)" onclick="mostrarAmpliada(this)"/>
+      <img src="Images2/CEA3.jpeg" alt="Foto 3" onmouseenter="mostrarAmpliada(this)" onclick="mostrarAmpliada(this)"/>
+      <img src="Images2/CEA4.jpeg" alt="Foto 4" onmouseenter="mostrarAmpliada(this)" onclick="mostrarAmpliada(this)"/>
+      <img src="Images2/CEA5.jpeg" alt="Foto 5" onmouseenter="mostrarAmpliada(this)" onclick="mostrarAmpliada(this)"/>
+    </div>
+</section>
+
+  <div class="hover-ampliada" id="hoverAmpliada">
+    <img id="imgAmpliada" src="" alt="Ampliada" />
+  </div>
+    
+
+<section id="carreras" class="carreras-section">
+    <div class="titulo-seccion">
+      <h2>Nuestras Carreras</h2>
+    </div>
+    <div class="carreras-grid">
+      <a href="sistemas_informaticos.html" class="carrera-card sistemas">
+        <img src="Images/Infor.jpg" alt="Sistemas Informáticos"/>
+        <h3>Sistemas Informáticos</h3>
+      </a>
+      <a href="textil_Confeccion.html" class="carrera-card textil">
+        <img src="Images/Confec.jpg" alt="Textil y Confección" />
+        <h3>Textil y Confección</h3>
+      </a>
+      <a href="gastronomia.html" class="carrera-card gastro">
+        <img src="Images/Gastro.jpg" alt="Gastronomía" />
+        <h3>Gastronomía</h3>
+      </a>
+      <a href="contaduria_General.html" class="carrera-card conta">
+        <img src="Images/Conta.jpg" alt="Contaduría General" />
+        <h3>Contaduría General</h3>
+      </a>
+    </div>
+</section>
+<section id="requisitos" class="requisitos-section">
+    <div class="titulo-seccion2">
+      <h2>Requisitos de Inscripción</h2>
+    </div>
+    <ul class="requisitos-lista">
+      <li>📄 Fotocopia de Cédula de Identidad</li>
+      <li>🧾 Certificado de Nacimiento</li>
+      <li>📝 Llenar el formulario de inscripción</li>
+    </ul>
+</section>
+
+<section id="contacto" class="contacto-section">
+        <div class="titulo-seccion3">
+          <h2>Contáctanos</h2>
+        </div>
+        <div class="contacto-info">
+          <p>📍 Dirección: Calle Maximiliano Marquez Nº 2036 (Lado UCB)</p>
+          <p>📱 Celular: <a href="tel:71418791">71418791</a></p>
+          <p>📞 Teléfono: <a href="tel:4502863">4502863</a></p>
+          <p>✉️ Correo: <a href="mailto:contacto@cea.edu.bo">contacto@cea.edu.bo</a></p>
+          <a class="whatsapp-btn" id="whatsapp-link" target="_blank">Escríbenos por WhatsApp 💬</a>
+        </div>
+</section>
+        <footer id="contacto" class="footer">
+            <div class="footer-content">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.833316632396!2d-66.14519144655722!3d-17.37175187155215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e375fa6d279abb%3A0x2593b31c86be20d1!2sCEA%20MADRE%20MAR%C3%8DA%20OLIVA!5e0!3m2!1ses-419!2sbo!4v1718307280569!5m2!1ses-419!2sbo"
+                    width="600" 
+                    height="90" 
+                    loading="lazy"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                ></iframe>
+                <p>&copy; 2025 CEA "Madre María Oliva" | Desarrollado por javier Enrique Delgadillo</p>
+
+            </div>
+        </footer>
+        
+
+        </section>
+    </section>
+        
+
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="scripts/galeria_hover_ampliada.js"></script>
+    <script src="scripts/mensaje.js?v=2"></script>
+</body>
+</html>
