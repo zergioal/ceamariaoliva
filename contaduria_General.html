@@ -4,138 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrera: Contaduría General</title>
-    <link rel="stylesheet" href="styles/contaduria_general.css" />
-    <link rel="stylesheet" href="styles/galeria_hover_ampliada.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/contaduria.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo-container">
-        <img src="Images/logo3.png" alt="Logo CEA" class="logo" />
-        <div class="title">
-          <h3>CENTRO DE EDUCACIÓN ALTERNATIVA</h3>
-          <h1>"MADRE MARÍA OLIVA"</h1>
-        </div>
-      </div>
+    <header class="text-center py-4 bg-transparent">
+      <img src="Images/logo3.png" alt="Logo CEA" />
+      <h3 class="fw-light">CENTRO DE EDUCACIÓN ALTERNATIVA</h3>
+      <h1
+        class="display-4 fw-bold text-success"
+        style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)"
+      >
+        "MADRE MARÍA OLIVA"
+      </h1>
     </header>
 
-    <nav class="main-nav">
+    <nav
+      class="main-nav d-flex justify-content-center py-3 sticky-top bg-white shadow-sm"
+    >
       <a href="index.html">Inicio</a>
-      <a href="index.html#carreras" class="active">Carreras</a>
+      <a href="index.html#carreras">Carreras</a>
       <a href="index.html#requisitos">Requisitos</a>
       <a href="index.html#contacto">Contacto</a>
     </nav>
 
-    <!--PARALLAX-->
-    <section class="parallax">
-      <div class="parallax-content">
-        <h2>Contaduría General</h2>
+    <main class="container py-5">
+      <section class="contaduria-header mb-5">
+        <h2 class="reveal-title">Contaduría General</h2>
         <p>
-          Gestión contable para emprendimientos, PyMES y entidades, incluyendo
-          documentación, costos, recursos humanos e inventarios.
+          Formación en principios contables, registros financieros, auditoría,
+          análisis de costos y legislación tributaria.
         </p>
-      </div>
-    </section>
+      </section>
 
-    <!--CURRICULAR-->
-    <section class="niveles-section">
-      <div class="nivel-card">
-        <h3>Técnico Básico</h3>
-        <ul>
-          <li>Matemática Financiera I</li>
-          <li>Contabilidad I</li>
-          <li>Legislación Laboral</li>
-          <li>Documentos Mercantiles</li>
-          <li>Informática Contable</li>
-        </ul>
-      </div>
+      <section class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-3 h-100 nivel-card">
+            <h5 class="text-center">Técnico Básico</h5>
+            <ul>
+              <li>Fundamentos Contables</li>
+              <li>Documentación Comercial</li>
+              <li>Matemática Financiera</li>
+              <li>Ética y Valores</li>
+              <li>Computación Básica</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-3 h-100 nivel-card">
+            <h5 class="text-center">Técnico Auxiliar</h5>
+            <ul>
+              <li>Contabilidad General</li>
+              <li>Gestión Tributaria</li>
+              <li>Administración de Recursos Humanos</li>
+              <li>Ofimática Contable</li>
+              <li>Emprendimiento I</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-3 h-100 nivel-card">
+            <h5 class="text-center">Técnico Medio I</h5>
+            <ul>
+              <li>Contabilidad de Costos</li>
+              <li>Auditoría I</li>
+              <li>Gestión Empresarial</li>
+              <li>Contabilidad Computarizada</li>
+              <li>Emprendimiento II</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-3 h-100 nivel-card">
+            <h5 class="text-center">Técnico Medio II</h5>
+            <ul>
+              <li>Auditoría II</li>
+              <li>Contabilidad Gubernamental</li>
+              <li>Tributación Avanzada</li>
+              <li>Normas Internacionales de Información Financiera</li>
+              <li>Modalidades de Graduación</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      <div class="nivel-card">
-        <h3>Técnico Auxiliar</h3>
-        <ul>
-          <li>Matemática Financiera II</li>
-          <li>Contabilidad II</li>
-          <li>Administración General I</li>
-          <li>Inventario y Almacenes</li>
-          <li>Costos Básicos</li>
-        </ul>
-      </div>
+      <section class="container py-5">
+        <h2 class="text-center mb-4" data-aos="zoom-in">Galería</h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up">
+            <img
+              src="Images2/Conta1.jpeg"
+              class="img-fluid rounded shadow"
+              alt="Contabilidad en aula"
+            />
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="Images2/Conta2.jpeg"
+              class="img-fluid rounded shadow"
+              alt="Trabajos contables"
+            />
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="Images2/Conta3.jpeg"
+              class="img-fluid rounded shadow"
+              alt="Exposición de resultados"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <div class="nivel-card">
-        <h3>Técnico Medio I</h3>
-        <ul>
-          <li>Contabilidad Avanzada</li>
-          <li>Gestión de Recursos Humanos</li>
-          <li>Sistemas de Costos</li>
-          <li>Tributación Básica</li>
-          <li>Proyecto Contable Inicial</li>
-        </ul>
-      </div>
-
-      <div class="nivel-card">
-        <h3>Técnico Medio II</h3>
-        <ul>
-          <li>Auditoría Básica</li>
-          <li>Contabilidad Gubernamental</li>
-          <li>Planificación Financiera</li>
-          <li>Práctica Profesional</li>
-          <li>Defensa Final</li>
-        </ul>
-      </div>
-    </section>
-    <section class="galeria" data-aos="zoom-out-up" data-aos-delay="100">
-      <h2>Galería</h2>
-      <div class="galeria-grid">
-        <img
-          src="Images2/Conta1.jpeg"
-          alt="Foto 1"
-          onmouseenter="mostrarAmpliada(this)"
-        />
-        <img
-          src="Images2/Conta2.jpeg"
-          alt="Foto 2"
-          onmouseenter="mostrarAmpliada(this)"
-        />
-        <img
-          src="Images2/Conta3.jpg"
-          alt="Foto 3"
-          onmouseenter="mostrarAmpliada(this)"
-        />
-      </div>
-    </section>
-    <!-- Imagen ampliada centrada -->
-    <div class="hover-ampliada" id="hoverAmpliada">
-      <img id="imgAmpliada" src="" alt="Ampliada" />
-    </div>
-
-    <footer id="contacto" class="footer">
-      <div class="footer-content">
-        <p>
-          Contacto:
-          <a
-            href="https:/wa.me/59171418791"
-            class="whatsapp-link"
-            target="_blank"
-            >WhatsApp</a
-          >
-          | Teléfono: 4502863
-        </p>
-        <p>Ubicación: Calle Maximiliano Marquez Nº 2036 (Lado UCB)</p>
+    <footer class="text-white text-center">
+      <div class="container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.833316632396!2d-66.14519144655722!3d-17.37175187155215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e375fa6d279abb%3A0x2593b31c86be20d1!2sCEA%20MADRE%20MAR%C3%8DA%20OLIVA!5e0!3m2!1ses-419!2sbo!4v1718307280569!5m2!1ses-419!2sbo"
-          width="600"
-          height="90"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18899.74195996116!2d-66.1469012176758!3d-17.377539521629988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e375fa6d279abb%3A0x2593b31c86be20d1!2sCEA%20MADRE%20MAR%C3%8DA%20OLIVA!5e1!3m2!1ses-419!2sbo!4v1753847412199!5m2!1ses-419!2sbo"
           loading="lazy"
-          style="border: 0"
-          allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
         ></iframe>
+
+        <p>
+          &copy; 2025 CEA "Madre María Oliva" | Desarrollado por Javier Enrique
+          Delgadillo
+        </p>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="scripts/galeria_hover_ampliada.js"></script>
 </html>

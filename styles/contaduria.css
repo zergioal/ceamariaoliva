@@ -1,34 +1,34 @@
-.gastronomia-header {
-  background: radial-gradient(circle, #ff6f61, #d32f2f);
+.contaduria-header {
+  background: linear-gradient(to right, #43cea2, #185a9d);
   color: white;
   padding: 4rem 1rem;
   text-align: center;
-  animation: expandReveal 1s ease-out;
+  animation: fadeZoomIn 1s ease-in-out;
 }
 
 .reveal-title {
   font-size: 2.8rem;
   font-weight: 700;
-  animation: fadeSlideUp 1s ease-out;
+  animation: slideFade 1s ease-out;
 }
 
-@keyframes fadeSlideUp {
-  0% {
+@keyframes slideFade {
+  from {
     opacity: 0;
     transform: translateY(30px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes expandReveal {
-  0% {
+@keyframes fadeZoomIn {
+  from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
-  100% {
+  to {
     opacity: 1;
     transform: scale(1);
   }

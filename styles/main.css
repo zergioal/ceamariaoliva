@@ -1,0 +1,294 @@
+/* main.css enriquecido */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f8fb;
+  color: #333;
+  scroll-behavior: smooth;
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  background: url("../Images/CEA.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+header img {
+  max-width: 140px;
+  margin-bottom: 1rem;
+}
+
+/* Navbar */
+.main-nav a {
+  margin: 0 1rem;
+  color: #1e88e5;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+.main-nav a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: #1e88e5;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.main-nav a:hover {
+  color: #0d47a1;
+}
+
+/* Institucional Cards */
+.institucional .card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.institucional .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Carreras */
+.card img {
+  border-radius: 10px 10px 0 0;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h5 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Galería tipo carrusel */
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* WhatsApp button */
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebc59;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #1e88e5;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Animaciones suaves */
+section {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-nav a {
+    margin: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  footer iframe {
+    height: 200px;
+  }
+}
+.seccion-animada {
+  background: linear-gradient(270deg, #1976d2, #0d47a1, #1976d2);
+  background-size: 600% 600%;
+  animation: movimientoFondo 15s ease infinite;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+@keyframes movimientoFondo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.seccion-animada h2 {
+  font-size: 2.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nivel-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nivel-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de entrada en el título */
+header h1 {
+  animation: fadeSlide 1.2s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto hover en tarjetas */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Transición suave en navbar */
+.main-nav a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.main-nav a:hover {
+  transform: scale(1.1);
+}
+
+/* Animación para las imágenes del carrusel */
+.carousel-item img {
+  transition: transform 0.6s ease;
+}
+.carousel-item:hover img {
+  transform: scale(1.02);
+}
+
+h2 {
+  position: relative;
+  overflow: hidden;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0d6efd;
+  margin: 10px auto 0;
+  animation: growLine 1s ease forwards;
+}
+
+@keyframes growLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}

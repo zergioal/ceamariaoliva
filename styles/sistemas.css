@@ -1,0 +1,63 @@
+.seccion-animada {
+  background: linear-gradient(270deg, #2c3e50, #34495e, #2c3e50);
+  background-size: 600% 600%;
+  animation: movimientoFondo 15s ease infinite;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+@keyframes movimientoFondo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scramble {
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.scramble::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  mix-blend-mode: difference;
+  animation: scrambleMask 1.2s steps(30) forwards;
+}
+
+@keyframes scrambleMask {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+.nivel-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nivel-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
